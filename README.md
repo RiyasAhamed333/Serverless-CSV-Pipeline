@@ -22,7 +22,7 @@ operations on a DynamoDB table based on the action column in the CSV.
 ✔ Automated price corrections
 ✔ E-commerce product ingestion
 
-🏗️ Architecture Diagram
+🏗️ Architecture Clean Visual Flow
 
 | Flow | AWS Service          | Action                                                     |
 | ---- | -------------------- | ---------------------------------------------------------- |
