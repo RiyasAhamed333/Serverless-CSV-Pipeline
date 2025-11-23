@@ -23,37 +23,15 @@ operations on a DynamoDB table based on the action column in the CSV.
 ✔ E-commerce product ingestion
 
 🏗️ Architecture Diagram
-      +--------------+
-      |   CSV File   |
-      |  (Flipkart)  |
-      +--------------+
-             |
-             v
-     +---------------+
-     |   Amazon S3   |
-     |    Upload     |
-     +---------------+
-             |
-       S3 Event Trigger
-             |
-             v
-   +-----------------------+
-   | AWS Lambda Function   |
-   | - Parse CSV           |
-   | - Insert / Update     |
-   | - Delete Item         |
-   +-----------------------+
-             |
-             v
-   +-----------------------+
-   |   Amazon DynamoDB     |
-   |    Product Table      |
-   +-----------------------+
-             |
-             v
-   +-----------------------+
-   |   CloudWatch Logs     |
-   +-----------------------+
+
+| Flow | AWS Service          | Action                                                     |
+| ---- | -------------------- | ---------------------------------------------------------- |
+| 📄   | **CSV File**         | Data source uploaded by user                               |
+| ⬇️   | **Amazon S3**        | CSV file is uploaded to S3 bucket                          |
+| ⚡    | **S3 Event Trigger** | Automatically triggers Lambda on file upload               |
+| 🧠   | **AWS Lambda**       | Parses CSV & performs Insert / Update / Delete in DynamoDB |
+| 🗄️  | **Amazon DynamoDB**  | Stores updated product records                             |
+| 📊   | **CloudWatch Logs**  | Logs processing details, successes, and errors             |
 
 📂 Folder Structure
 
