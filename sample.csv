@@ -1,0 +1,7 @@
+product_id,name,price,action
+101,Redmi Note 12,15999,INSERT
+102,Boat Headset,799,INSERT
+101,Redmi Note 12,14999,UPDATE
+102,Boat Headset,749,UPDATE
+103,Samsung M34,18999,INSERT
+102,Boat Headset,,DELETE
