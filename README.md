@@ -44,6 +44,7 @@ serverless-csv-pipeline/
 
 
 🧠 How It Works
+
 1️⃣ Upload CSV to S3
 
 Example CSV:
@@ -145,11 +146,17 @@ AmazonDynamoDBFullAccess
 CloudWatchLogsFullAccess
 
 📊 Sample CloudWatch Output
+
 File received: s3://flipkart-bucket/sample.csv
+
 Inserted: 101
+
 Inserted: 102
+
 Updated: 101
+
 Deleted: 102
+
 CSV processed successfully
 
 🏅 Skills Demonstrated
